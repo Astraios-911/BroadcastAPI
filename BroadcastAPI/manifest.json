@@ -1,0 +1,17 @@
+{
+	"Name": "More TV Channels",
+	"Author": "Astraios",
+	"Version": "1.0.0",
+	"Description": "Adds more TV channels",
+	"UniqueID": "Astraios.BroadcastAPI",
+	"EntryDll": "BroadcastAPI.dll",
+	"MinimumApiVersion": "3.0.0",
+	"UpdateKeys": [],
+	"Dependencies": [
+		{
+			"UniqueID": "leroymilo.FurnitureFramework",
+			"IsRequired": false,
+			"MinimumVersion": "3.2.4"
+		}
+	]
+}

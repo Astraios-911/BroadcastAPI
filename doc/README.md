@@ -6,7 +6,7 @@ BroadcastAPI lets you add custom TV channels to Stardew Valley without writing a
 
 - [SMAPI](https://smapi.io/) installed  
 - [Content Patcher](https://www.nexusmods.com/stardewvalley/mods/1915) installed  
-- [BroadcastAPI](https://github.com/Astraios-911/BroadcastAPI) installed
+- [BroadcastAPI](https://www.nexusmods.com/stardewvalley/mods/41844) installed
 
 ## Create the Content Pack
 

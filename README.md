@@ -1,6 +1,6 @@
 # BroadcastAPI
 
-A [Stardew Valley](https://www.stardewvalley.net/) framework mod that lets modders add custom TV channels and edit vanilla ones.
+A [Stardew Valley](https://www.stardewvalley.net/) framework mod that lets modders add custom TV channels.
 
 **This is a framework mod. It adds no content on its own — it is a tool for other mod authors.**
 

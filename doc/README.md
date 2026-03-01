@@ -97,4 +97,4 @@ In the same `content.json`, add an `EditData` entry targeting `Astraios.Broadcas
 
 **Note:** The channel's name should be a [unique string ID](https://stardewvalleywiki.com/Modding:Common_data_field_types#Unique_string_ID) prefix it with your mod's `UniqueID` (in manifest.json) like this `YourName.ChannelName` to avoid conflicts with other mods.
 
-That's it! Launch the game, interact with any TV, and your channel will appear in the menu. If you want to do more advanced stuff or confused and want more in-depth explanations check these other guides:
+That's it! Launch the game, interact with any TV, and your channel will appear in the menu. If you want to do more advanced stuff or confused and want more in-depth explanations check [Custom Channels](https://github.com/Astraios-911/BroadcastAPI/blob/main/doc/Custom%20Channel.md)

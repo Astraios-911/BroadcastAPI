@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "A3hrGpb8JbI=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ahmed\\Modding\\Mods\\BroadcastAPI\\BroadcastAPI\\BroadcastAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ahmed\\.nuget\\packages\\lib.harmony\\2.4.2\\lib.harmony.2.4.2.nupkg.sha512",
+    "C:\\Users\\ahmed\\.nuget\\packages\\pathoschild.stardew.modbuildconfig\\4.4.0\\pathoschild.stardew.modbuildconfig.4.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}

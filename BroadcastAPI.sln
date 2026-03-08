@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.3.11505.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BroadcastAPI", "BroadcastAPI\BroadcastAPI.csproj", "{AC6DB7D6-348D-BCA7-ECE4-87880D448059}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC6DB7D6-348D-BCA7-ECE4-87880D448059}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC6DB7D6-348D-BCA7-ECE4-87880D448059}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC6DB7D6-348D-BCA7-ECE4-87880D448059}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC6DB7D6-348D-BCA7-ECE4-87880D448059}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5932C934-DFB4-4F27-8BC0-B33A9841042E}
+	EndGlobalSection
+EndGlobal

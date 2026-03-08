@@ -1,0 +1,17 @@
+D:\Modding\Mods\More TV Channels\bin\Debug\net6.0\MoreTVChannels.deps.json
+D:\Modding\Mods\More TV Channels\bin\Debug\net6.0\MoreTVChannels.dll
+D:\Modding\Mods\More TV Channels\obj\Debug\net6.0\MoreTVChannels.csproj.AssemblyReference.cache
+D:\Modding\Mods\More TV Channels\obj\Debug\net6.0\MoreTVChannels.GeneratedMSBuildEditorConfig.editorconfig
+D:\Modding\Mods\More TV Channels\obj\Debug\net6.0\MoreTVChannels.AssemblyInfoInputs.cache
+D:\Modding\Mods\More TV Channels\obj\Debug\net6.0\MoreTVChannels.AssemblyInfo.cs
+D:\Modding\Mods\More TV Channels\obj\Debug\net6.0\MoreTVChannels.csproj.CoreCompileInputs.cache
+D:\Modding\Mods\More TV Channels\obj\Debug\net6.0\MoreTVChannels.dll
+C:\Users\private\Modding\Mods\More TV Channels\obj\Debug\net6.0\MoreTVChannels.csproj.AssemblyReference.cache
+C:\Users\private\Modding\Mods\More TV Channels\obj\Debug\net6.0\MoreTVChannels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\private\Modding\Mods\More TV Channels\obj\Debug\net6.0\MoreTVChannels.AssemblyInfoInputs.cache
+C:\Users\private\Modding\Mods\More TV Channels\obj\Debug\net6.0\MoreTVChannels.AssemblyInfo.cs
+C:\Users\private\Modding\Mods\More TV Channels\obj\Debug\net6.0\MoreTVChannels.csproj.CoreCompileInputs.cache
+C:\Users\private\Modding\Mods\More TV Channels\obj\Debug\net6.0\MoreTVChannels.dll
+C:\Users\private\Modding\Mods\More TV Channels\bin\Debug\net6.0\MoreTVChannels.deps.json
+C:\Users\private\Modding\Mods\More TV Channels\bin\Debug\net6.0\MoreTVChannels.dll
+C:\Users\private\Modding\Mods\More TV Channels\obj\Debug\net6.0\MoreTVChannels.sourcelink.json

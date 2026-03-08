@@ -1,0 +1,17 @@
+C:\Users\private\Modding\Mods\More TV Channels\bin\Debug\net6.0\BroadcastAPI.deps.json
+C:\Users\private\Modding\Mods\More TV Channels\bin\Debug\net6.0\BroadcastAPI.dll
+C:\Users\private\Modding\Mods\More TV Channels\obj\Debug\net6.0\BroadcastAPI.csproj.AssemblyReference.cache
+C:\Users\private\Modding\Mods\More TV Channels\obj\Debug\net6.0\BroadcastAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\private\Modding\Mods\More TV Channels\obj\Debug\net6.0\BroadcastAPI.AssemblyInfoInputs.cache
+C:\Users\private\Modding\Mods\More TV Channels\obj\Debug\net6.0\BroadcastAPI.AssemblyInfo.cs
+C:\Users\private\Modding\Mods\More TV Channels\obj\Debug\net6.0\BroadcastAPI.csproj.CoreCompileInputs.cache
+C:\Users\private\Modding\Mods\More TV Channels\obj\Debug\net6.0\BroadcastAPI.sourcelink.json
+C:\Users\private\Modding\Mods\More TV Channels\obj\Debug\net6.0\BroadcastAPI.dll
+C:\Users\ahmed\Modding\Mods\BroadcastAPI\BroadcastAPI\bin\Debug\net6.0\BroadcastAPI.deps.json
+C:\Users\ahmed\Modding\Mods\BroadcastAPI\BroadcastAPI\bin\Debug\net6.0\BroadcastAPI.dll
+C:\Users\ahmed\Modding\Mods\BroadcastAPI\BroadcastAPI\obj\Debug\net6.0\BroadcastAPI.csproj.AssemblyReference.cache
+C:\Users\ahmed\Modding\Mods\BroadcastAPI\BroadcastAPI\obj\Debug\net6.0\BroadcastAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ahmed\Modding\Mods\BroadcastAPI\BroadcastAPI\obj\Debug\net6.0\BroadcastAPI.AssemblyInfoInputs.cache
+C:\Users\ahmed\Modding\Mods\BroadcastAPI\BroadcastAPI\obj\Debug\net6.0\BroadcastAPI.AssemblyInfo.cs
+C:\Users\ahmed\Modding\Mods\BroadcastAPI\BroadcastAPI\obj\Debug\net6.0\BroadcastAPI.csproj.CoreCompileInputs.cache
+C:\Users\ahmed\Modding\Mods\BroadcastAPI\BroadcastAPI\obj\Debug\net6.0\BroadcastAPI.dll

@@ -89,15 +89,16 @@ In the same `content.json`, add an `EditData` entry targeting `Astraios.Broadcas
           "AnimationLength": 4, // How many frames are in this channel (default 2)
           "AnimationInterval": 150.0 // The Time between frames (default 150)   
         }
-      }
+      },
+      "When": { "DayOfWeek": "Monday" } // You can add conditions for when the channel appears with this
     }
   ]
 }
 ```
 
-**Note:** The channel's name should be a [unique string ID](https://stardewvalleywiki.com/Modding:Common_data_field_types#Unique_string_ID) prefix it with your mod's `UniqueID` (in manifest.json) like this `{{ModID}}_ChannelName` to avoid conflicts with other mods.
+**Note:** The channel's name should be a [unique string ID](https://stardewvalleywiki.com/Modding:Common_data_field_types#Unique_string_ID), prefix it with your mod's `UniqueID` (in manifest.json) like this `{{ModID}}_ChannelName` to avoid conflicts with other mods. For info about Content Patcher's `When` check [Conditions](https://github.com/Pathoschild/StardewMods/blob/develop/ContentPatcher/docs/author-guide/tokens.md#Conditions).
 
-That's it! Launch the game, interact with any TV, and your channel will appear in the menu. If you want to do more advanced stuff or confused and want more in-depth explanations check these guides:
+That's it! Launch the game, interact with any TV, and your channel will appear in the menu. If you want to do more advanced stuff, or confused and want more in-depth explanations, check these guides:
 
 - [Internals](Internals.md)
 - [Dialogue](Dialogue.md)

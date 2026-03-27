@@ -1,7 +1,7 @@
 {
 	"Name": "BroadcastAPI",
 	"Author": "Astraios",
-	"Version": "1.0.1",
+	"Version": "1.1.0",
 	"Description": "Adds more TV channels",
 	"UniqueID": "Astraios.BroadcastAPI",
 	"EntryDll": "BroadcastAPI.dll",
@@ -9,9 +9,7 @@
 	"UpdateKeys": [ "Nexus: 41844", "CurseForge: 1475866" ],
 	"Dependencies": [
 		{
-			"UniqueID": "leroymilo.FurnitureFramework",
-			"IsRequired": false,
-			"MinimumVersion": "3.2.4"
+			"UniqueID": "Pathoschild.ContentPatcher"
 		}
 	]
 }

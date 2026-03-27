@@ -1,8 +1,0 @@
-D:\Modding\Mods\More TV Channels\bin\Debug\net6.0\More TV Channels.deps.json
-D:\Modding\Mods\More TV Channels\bin\Debug\net6.0\More TV Channels.dll
-D:\Modding\Mods\More TV Channels\obj\Debug\net6.0\More TV Channels.csproj.AssemblyReference.cache
-D:\Modding\Mods\More TV Channels\obj\Debug\net6.0\More TV Channels.GeneratedMSBuildEditorConfig.editorconfig
-D:\Modding\Mods\More TV Channels\obj\Debug\net6.0\More TV Channels.AssemblyInfoInputs.cache
-D:\Modding\Mods\More TV Channels\obj\Debug\net6.0\More TV Channels.AssemblyInfo.cs
-D:\Modding\Mods\More TV Channels\obj\Debug\net6.0\More TV Channels.csproj.CoreCompileInputs.cache
-D:\Modding\Mods\More TV Channels\obj\Debug\net6.0\More TV Channels.dll

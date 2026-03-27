@@ -2,7 +2,6 @@ using HarmonyLib;
 using StardewValley;
 using StardewValley.Objects;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace BroadcastAPI
 {
@@ -24,16 +23,38 @@ namespace BroadcastAPI
             int insertPos = choices.Count - 1; // Before "Leave" option
 
             // Add custom channels that aren't hidden
-            foreach (var channel in ModEntry.CustomChannels.Data.Values.Where(c => !c.HideFromMenu))
-                choices.Insert(insertPos++, new Response(channel.Name, channel.Displayname));
+            foreach (var channel in ModEntry.CustomChannels.Data.Values)
+            {
+                bool hideFromMenu = channel.HideFromMenu;
+                if (ConditionResolver.ShouldInvertHideFromMenu(channel.Conditions))
+                    hideFromMenu = !hideFromMenu;
+
+                if (!hideFromMenu)
+                    choices.Insert(insertPos++, new Response(channel.Name, channel.DisplayName));
+            }
 
             // Handle edited channels
             foreach (var (key, edit) in ModEntry.EditChannels.Data)
             {
-                if (edit.HideFromMenu == true) continue;
-
-                var displayName = edit.Displayname ?? key;
                 var existingIdx = choices.FindIndex(r => r.responseKey == key);
+                bool hideFromMenu = edit.HideFromMenu ?? false;
+
+                if (ConditionResolver.ShouldInvertHideFromMenu(edit.Conditions))
+                    hideFromMenu = !hideFromMenu;
+
+                if (hideFromMenu)
+                {
+                    if (existingIdx >= 0)
+                    {
+                        choices.RemoveAt(existingIdx);
+                        if (existingIdx < insertPos)
+                            insertPos--;
+                    }
+
+                    continue;
+                }
+
+                var displayName = edit.DisplayName ?? key;
 
                 if (existingIdx >= 0)
                     choices[existingIdx] = new Response(key, displayName);

@@ -23,7 +23,7 @@ namespace BroadcastAPI
             return new CustomChannelData
             {
                 Name = baseChannel.Name,
-                Displayname = editData.Displayname ?? baseChannel.Displayname,
+                DisplayName = editData.DisplayName ?? baseChannel.DisplayName,
                 Dialogues = editData.Dialogues ?? baseChannel.Dialogues,
                 Texture = editData.Texture ?? baseChannel.Texture,
                 SpriteRegion = editData.SpriteRegion ?? baseChannel.SpriteRegion,
@@ -44,6 +44,7 @@ namespace BroadcastAPI
                 Actions = editData.Actions ?? baseChannel.Actions,
                 NextChannel = editData.NextChannel != null ? editData.NextChannel : baseChannel.NextChannel,
                 HideFromMenu = editData.HideFromMenu ?? baseChannel.HideFromMenu,
+                Conditions = editData.Conditions ?? baseChannel.Conditions,
                 BQuestions = editData.BQuestions ?? baseChannel.BQuestions,
                 EQuestions = editData.EQuestions ?? baseChannel.EQuestions
             };

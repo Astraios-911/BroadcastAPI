@@ -8,7 +8,8 @@ namespace BroadcastAPI
     public class CustomChannelData
     {
         public string Name { get; set; } = "";
-        public string Displayname { get; set; } = "";
+        public string DisplayName { get; set; } = "";
+        public string Displayname { get => DisplayName; set => DisplayName = value; }
         public List<string> Dialogues { get; set; } = new();
         public string? Texture { get; set; }
         public Rectangle SpriteRegion { get; set; } = new Rectangle(0, 0, 42, 28);
@@ -29,6 +30,7 @@ namespace BroadcastAPI
         public List<string>? Actions { get; set; }
         public List<string>? NextChannel { get; set; } = null;
         public bool HideFromMenu { get; set; } = false;
+        public List<string>? Conditions { get; set; } = null;
         public QuestionsData? BQuestions { get; set; } = null;
         public QuestionsData? EQuestions { get; set; } = null;
     }
@@ -38,7 +40,8 @@ namespace BroadcastAPI
     /// </summary>
     public class EditChannelData
     {
-        public string? Displayname { get; set; } = null;
+        public string? DisplayName { get; set; } = null;
+        public string? Displayname { get => DisplayName; set => DisplayName = value; }
         public List<string>? Dialogues { get; set; } = null;
         public string? Texture { get; set; } = null;
         public Rectangle? SpriteRegion { get; set; } = null;
@@ -59,6 +62,7 @@ namespace BroadcastAPI
         public List<string>? Actions { get; set; } = null;
         public List<string>? NextChannel { get; set; } = null;
         public bool? HideFromMenu { get; set; } = null;
+        public List<string>? Conditions { get; set; } = null;
         public QuestionsData? BQuestions { get; set; } = null;
         public QuestionsData? EQuestions { get; set; } = null;
     }

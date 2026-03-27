@@ -11,13 +11,13 @@ The channel's internal unique ID. It's used everywhere - the channel menu, chain
 "Name": "{{ModID}}_MyChannel"
 ```
 
-### `Displayname`
+### `DisplayName`
 **Type:** `string` | **Required**
 
 The name shown to the player in the TV channel selection menu.
 
 ```json
-"Displayname": "My Awesome Channel"
+"DisplayName": "My Awesome Channel"
 ```
 
 ### `HideFromMenu`
@@ -27,4 +27,21 @@ When `true`, the channel won't appear in the TV menu. Useful for channels you on
 
 ```json
 "HideFromMenu": true
+```
+
+### `Conditions`
+**Type:** `list<string>` | **Default:** `null`
+
+Optional Game State Query conditions that can invert `HideFromMenu`.
+
+- Conditions separated by commas in one list entry are treated as **AND**.
+- Multiple list entries are treated as **OR**.
+- If any entry matches, `HideFromMenu` is inverted for that channel.
+
+```json
+"HideFromMenu": true,
+"Conditions": [
+	"SEASON spring, DAY_OF_MONTH 13",
+	"PLAYER_HAS_ITEM (O)72"
+]
 ```

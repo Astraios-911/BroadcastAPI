@@ -5,6 +5,7 @@
 	<RootNamespace>BroadcastAPI</RootNamespace>
 	<ImplicitUsings>enable</ImplicitUsings>
 	<Nullable>enable</Nullable>
+    <Version>1.1.0</Version>
 	<GameModsPath>C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods (dev)</GameModsPath>
   </PropertyGroup>
 
@@ -13,8 +14,8 @@
 	<PackageReference Include="Pathoschild.Stardew.ModBuildConfig" Version="4.4.0" />
   </ItemGroup>
 
-  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-	<Exec Command="powershell -Command &quot;Expand-Archive -Path '$(OutputPath)BroadcastAPI 1.0.0.zip' -DestinationPath '$(GameModsPath)' -Force&quot;" />
-  </Target>
+   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<Exec Command="powershell -Command &quot;Expand-Archive -Path '$(OutputPath)BroadcastAPI $(Version).zip' -DestinationPath '$(GameModsPath)' -Force&quot;" />
+	</Target>
 
 </Project>

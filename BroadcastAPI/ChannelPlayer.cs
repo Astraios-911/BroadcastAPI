@@ -3,7 +3,6 @@ using Microsoft.Xna.Framework.Graphics;
 using StardewModdingAPI;
 using StardewValley;
 using StardewValley.Objects;
-using StardewValley.Triggers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -76,7 +75,8 @@ namespace BroadcastAPI
             ScreenField.SetValue(tv, sprite);
 
             // Show overlays via OverlayManager
-            OverlayManager.ShowOverlays(channel.Overlays, tv.getScreenPosition(), tv.getScreenSizeModifier(), tv);
+            var resolvedOverlays = ConditionResolver.ResolveAllConditionalValues(channel.Overlays, "Overlays");
+            OverlayManager.ShowOverlays(resolvedOverlays, tv.getScreenPosition(), tv.getScreenSizeModifier(), tv);
 
             // Display dialogues
             if (channel.Dialogues?.Count > 0)
@@ -131,60 +131,7 @@ namespace BroadcastAPI
 
         internal static string? ResolveNextChannelName(List<string>? nextChannelEntries)
         {
-            if (nextChannelEntries == null || nextChannelEntries.Count == 0)
-                return null;
-
-            foreach (string raw in nextChannelEntries)
-            {
-                if (string.IsNullOrWhiteSpace(raw))
-                    continue;
-
-                string entry = raw.Trim();
-
-                if (!entry.StartsWith("If ", StringComparison.OrdinalIgnoreCase))
-                    return entry;
-
-                string conditional = entry.Substring("If ".Length).Trim();
-                string[] parts = conditional.Split(" ## ", StringSplitOptions.None);
-                if (parts.Length < 2)
-                {
-                    ModEntry.ModMonitor?.Log($"[ResolveNextChannelName] Invalid conditional NextChannel entry (expected ' ## ' separators): {raw}", LogLevel.Warn);
-                    continue;
-                }
-
-                string conditions = parts[0].Trim();
-                string trueChannelName = parts[1].Trim();
-                string? falseChannelName = parts.Length >= 3 ? parts[2].Trim() : null;
-
-                if (string.IsNullOrEmpty(trueChannelName))
-                {
-                    ModEntry.ModMonitor?.Log($"[ResolveNextChannelName] Invalid conditional NextChannel entry (empty true channel name): {raw}", LogLevel.Warn);
-                    continue;
-                }
-
-                if (parts.Length > 3)
-                {
-                    ModEntry.ModMonitor?.Log($"[ResolveNextChannelName] Invalid conditional NextChannel entry (too many ' ## ' segments): {raw}", LogLevel.Warn);
-                    continue;
-                }
-
-                if (falseChannelName != null && falseChannelName.Length == 0)
-                {
-                    ModEntry.ModMonitor?.Log($"[ResolveNextChannelName] Invalid conditional NextChannel entry (empty false channel name): {raw}", LogLevel.Warn);
-                    continue;
-                }
-
-                bool result = string.IsNullOrEmpty(conditions)
-                    || GameStateQuery.CheckConditions(conditions, Game1.currentLocation, Game1.player, null, null, null);
-
-                if (result)
-                    return trueChannelName;
-
-                if (!string.IsNullOrEmpty(falseChannelName))
-                    return falseChannelName;
-            }
-
-            return null;
+            return ConditionResolver.ResolveFirstConditionalValue(nextChannelEntries, "NextChannel");
         }
 
         /// <summary>

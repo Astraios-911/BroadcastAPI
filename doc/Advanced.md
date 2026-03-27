@@ -1,3 +1,5 @@
+# Advanced
+
 If you haven't made a channel yet, start with [Getting Started](author-guide.md) first.
 
 ### `Actions`
@@ -31,7 +33,7 @@ Chains into another channel after this one finishes. BroadcastAPI checks the lis
 ### `Overlays`
 **Type:** `list of strings` | **Default:** `null`
 
-A list of overlay names to show on top of the channel while it plays. Overlays are defined in `Astraios.BroadcastAPI/Overlays` and supports every [visual](https://github.com/Astraios-911/BroadcastAPI/blob/main/doc/Visuals.md) and [effect](https://github.com/Astraios-911/BroadcastAPI/blob/main/doc/Effects.md).
+A list of overlay names to show on top of the channel while it plays. Overlays are defined in `Astraios.BroadcastAPI/Overlays` and supports every [visual](https://github.com/Astraios-911/BroadcastAPI/blob/main/doc/Visuals.md) and [effect](https://github.com/Astraios-911/BroadcastAPI/blob/main/doc/Effects.md). Entries can be plain overlay names or conditionals using [Game State Queries](https://stardewvalleywiki.com/Modding:Game_state_queries).
 
 ```json
 "Overlays": [ "{{ModID}}_StaticEffect", "{{ModID}}_Border" ]

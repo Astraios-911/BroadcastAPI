@@ -18,18 +18,17 @@ Inside it, create a `manifest.json`:
 
 ```json
 {
-  "Name": "My Channel",
+  "Name": "Mod Name",
   "Author": "YourName",
   "Version": "1.0.0",
   "Description": "Adds a custom TV channel.",
-  "UniqueID": "{{ModID}}_MyChannel",
+  "UniqueID": "YourName.ModName",
   "ContentPackFor": {
     "UniqueID": "Pathoschild.ContentPatcher"
   },
   "Dependencies": [
     {
       "UniqueID": "Astraios.BroadcastAPI",
-      "IsRequired": true
     }
   ]
 }

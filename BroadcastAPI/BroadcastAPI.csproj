@@ -5,7 +5,7 @@
 	<RootNamespace>BroadcastAPI</RootNamespace>
 	<ImplicitUsings>enable</ImplicitUsings>
 	<Nullable>enable</Nullable>
-    <Version>1.1.0</Version>
+    <Version>1.1.1</Version>
 	<GameModsPath>C:/Program Files (x86)/Steam/steamapps/common/Stardew Valley/Mods (dev)</GameModsPath>
   </PropertyGroup>
 

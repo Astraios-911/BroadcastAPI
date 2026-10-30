@@ -11,6 +11,11 @@ namespace BroadcastAPI
         public string DisplayName { get; set; } = "";
         public string Displayname { get => DisplayName; set => DisplayName = value; }
         public List<string> Dialogues { get; set; } = new();
+        /// <summary>
+        ///     If true, an empty <see cref="Dialogues"/> collection will NOT 
+        ///   be replaced by "..."
+        /// </summary>
+        public bool AllowNoDialogues { get; set; } = false;
         public string? Texture { get; set; }
         public Rectangle SpriteRegion { get; set; } = new Rectangle(0, 0, 42, 28);
         public float AnimationInterval { get; set; } = 150f;
@@ -43,6 +48,11 @@ namespace BroadcastAPI
         public string? DisplayName { get; set; } = null;
         public string? Displayname { get => DisplayName; set => DisplayName = value; }
         public List<string>? Dialogues { get; set; } = null;
+        /// <summary>
+        ///     If true, an empty <see cref="Dialogues"/> collection will NOT 
+        ///   be replaced by "..."
+        /// </summary>
+        public bool? AllowNoDialogues { get; set; } = null;
         public string? Texture { get; set; } = null;
         public Rectangle? SpriteRegion { get; set; } = null;
         public float? AnimationInterval { get; set; } = null;

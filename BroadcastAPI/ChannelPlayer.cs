@@ -83,6 +83,12 @@ namespace BroadcastAPI
             {
                 Game1.multipleDialogues(channel.Dialogues.ToArray());
             }
+            // if the "dont replace 'no dialogues' with '...'" option is true, dont replace
+            else if (channel.AllowNoDialogues)
+            {
+                ModEntry.ModMonitor?.Log($"[PlayChannel] No dialogues, default-replacement bypassed", LogLevel.Debug);
+            }
+            // otherwise, show the default '...' message
             else
             {
                 ModEntry.ModMonitor?.Log($"[PlayChannel] No dialogues, showing default", LogLevel.Debug);

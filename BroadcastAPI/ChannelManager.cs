@@ -25,6 +25,7 @@ namespace BroadcastAPI
                 Name = baseChannel.Name,
                 DisplayName = editData.DisplayName ?? baseChannel.DisplayName,
                 Dialogues = editData.Dialogues ?? baseChannel.Dialogues,
+                AllowNoDialogues = editData.AllowNoDialogues ?? baseChannel.AllowNoDialogues,
                 Texture = editData.Texture ?? baseChannel.Texture,
                 SpriteRegion = editData.SpriteRegion ?? baseChannel.SpriteRegion,
                 AnimationInterval = editData.AnimationInterval ?? baseChannel.AnimationInterval,
